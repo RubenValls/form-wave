@@ -23,3 +23,28 @@ body{
     text-align: center;
     padding: 10px;
 }
+
+.inputs-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.inputs-container input{
+    margin: 15px;
+    height: 40px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: large;
+    background-color: #2B4E6C;
+}
+
+input:focus{
+    outline: none;
+}
