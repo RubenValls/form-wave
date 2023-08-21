@@ -13,7 +13,7 @@ body{
     align-items: center;
     margin: auto;
     width: 350px;
-    height: 400px;
+    height: 425px;
     color: white;
     background-color: #2B4E6C;
     border-radius: 5px;
@@ -37,7 +37,6 @@ body{
 }
 
 .inputs-container input{
-    margin: 15px;
     height: 40px;
     width: 80%;
     border: none;
@@ -45,6 +44,10 @@ body{
     color: white;
     font-size: large;
     background-color: #2B4E6C;
+}
+
+input{
+    margin-bottom: 30px;
 }
 
 input:focus{
@@ -65,6 +68,10 @@ button{
     border-radius: 5px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 p{
     display: flex;
     justify-content: start;
@@ -78,4 +85,32 @@ p a{
     margin-left: 5px;
     text-decoration: none;
     color: #ADD8E6;
+}
+
+label{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: auto;
+    width: 80%;
+}
+
+#emailLabel{
+    position: absolute;
+    top: 13px;
+    left: 45px;
+}
+
+#passwordLabel{
+    position: absolute;
+    top: 82px;
+    left: 45px;
+}
+
+.emailSpan{
+    transition: 0.5s;
+}
+
+.passwordSpan{
+    transition: 0.5s;
 }
