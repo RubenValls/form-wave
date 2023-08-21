@@ -15,12 +15,14 @@ const changeEmailLabel = () => {
 }
 
 const revertEmailLabel = () => {
-    emailSpan.forEach((span) => {
-        span.style.transitionDelay = `${transitionTime}s`;
-        span.style.transform = "translate(0px, 0px)";
-        span.style.color = "white";
-        transitionTime += 0.075;
-    })
+    if(!emailInput.value){
+        emailSpan.forEach((span) => {
+            span.style.transitionDelay = `${transitionTime}s`;
+            span.style.transform = "translate(0px, 0px)";
+            span.style.color = "white";
+            transitionTime += 0.075;
+        })
+    }
     transitionTime = 0;
 }
 
@@ -35,12 +37,14 @@ const changePasswordLabel = () => {
 }
 
 const revertPasswordLabel = () => {
-    passwordSpan.forEach((span) => {
-        span.style.transitionDelay = `${transitionTime}s`;
-        span.style.transform = "translate(0px, 0px)";
-        span.style.color = "white";
-        transitionTime += 0.075;
-    })
+    if(!passwordInput.value){
+        passwordSpan.forEach((span) => {
+            span.style.transitionDelay = `${transitionTime}s`;
+            span.style.transform = "translate(0px, 0px)";
+            span.style.color = "white";
+            transitionTime += 0.075;
+        })
+    }
     transitionTime = 0;
 }
 
