@@ -13,7 +13,7 @@ body{
     align-items: center;
     margin: auto;
     width: 350px;
-    height: 425px;
+    height: 400px;
     color: white;
     background-color: #2B4E6C;
     border-radius: 5px;
@@ -47,4 +47,33 @@ body{
 
 input:focus{
     outline: none;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: 50px;
+    font-size: medium;
+    background-color: #ADD8E6;
+    border: none;
+    border-radius: 5px;
+}
+
+p{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: auto;
+    margin-top: 25px;
+    width: 80%;
+}
+
+p a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #ADD8E6;
 }
